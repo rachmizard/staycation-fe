@@ -43,16 +43,11 @@
 @import "utilities";
 @import "print";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-
-body {
-    font-family: "Poppins", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 .brand-text-icon {
     font-size: 26px;
     font-weight: bold;
-    font-family: "Poppins", sans-serif;
     color: $primary;
     &:hover {
         color: $primary;
@@ -64,6 +59,7 @@ header {
     border-bottom: 1px solid $gray-200;
     width: 100%;
     position: relative;
+    margin-bottom: 20px;
     .navbar {
         height: 80px;
         ul.navbar-nav {
