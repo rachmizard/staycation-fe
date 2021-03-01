@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 
 import Header from "parts/Header";
-import MockPicked from "parts/MostPicked";
 
 import landingPage from "mocks/landingPage.json";
 import Hero from "parts/Hero";
+import MostPicked from "parts/MostPicked";
+import Categories from "parts/Categories";
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -17,10 +18,11 @@ export default class LandingPage extends Component {
       <>
         <Header {...this.props}></Header>
         <Hero refMostPicked={this.refMostPicked} data={landingPage.hero}></Hero>
-        <MockPicked
+        <MostPicked
           refMostPicked={this.refMostPicked}
           data={landingPage.mostPicked}
-        ></MockPicked>
+        ></MostPicked>
+        <Categories data={landingPage.categories}></Categories>
       </>
     );
   }
