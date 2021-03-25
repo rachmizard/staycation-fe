@@ -6,6 +6,7 @@ import landingPage from "mocks/landingPage.json";
 import Hero from "parts/Hero";
 import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
+import Testimony from "parts/Testimony";
 
 export default class LandingPage extends Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class LandingPage extends Component {
           data={landingPage.mostPicked}
         ></MostPicked>
         <Categories data={landingPage.categories}></Categories>
+        <Testimony data={landingPage.testimonial}></Testimony>
       </>
     );
   }

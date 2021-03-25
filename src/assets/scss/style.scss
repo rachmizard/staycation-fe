@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import "colorVariables";
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -197,4 +198,10 @@ section {
     object-fit: contain;
     height: 100%;
     width: 100%;
+}
+
+.testimonial-hero,
+.testimonial-hero img {
+    width: 365px;
+    height: 500px;
 }
